@@ -5,6 +5,17 @@ package slices
 // Falls `target` nicht vorkommt, bleibt das Slice unverändert.
 // Das Slice wird über einen Pointer übergeben und direkt verändert.
 func CutAfterWord(words []string, target string) []string {
-	// TODO: Funktion implementieren
+	var new []string
+
+	for _,v := range words{
+		if v == target {
+			new = append(new, v)
+			return new
+		}else{
+		new = append(new, v)
+		}
+		
+	}
+
 	return words
 }

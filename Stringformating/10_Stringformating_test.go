@@ -1,6 +1,8 @@
 package stringformating
 
-import "testing"
+import (
+	"testing"
+)
 
 // Hinweis: Diese Tests prüfen exakte Strings (inkl. Leerzeichen).
 // Stelle sicher, dass deine Funktionen genau das geforderte Format zurückgeben.
