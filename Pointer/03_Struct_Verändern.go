@@ -9,5 +9,15 @@ type Person struct {
 // Erhöhe das Alter der Person um 1.
 // Wenn p == nil, soll nichts passieren.
 func Birthday(p *Person) {
-	// TODO: implement
+
+	if p == nil {
+		return
+	}
+
+	(*p).Alter += 1 
+ 
 }
+
+
+
+

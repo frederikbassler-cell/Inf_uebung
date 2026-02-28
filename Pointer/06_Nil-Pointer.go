@@ -4,6 +4,11 @@ package pointer
 // Wenn p == nil, returne (0, false).
 // Sonst returne (*p, true).
 func SafeDeref(p *int) (int, bool) {
-	// TODO: implement
-	return 0, false
+	
+	if p == nil {
+		return 0, false 
+	}else{
+		return *p,true
+	}
+
 }

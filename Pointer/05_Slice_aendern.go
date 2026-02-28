@@ -4,5 +4,14 @@ package pointer
 // Verdopple jeden Wert im Slice in-place.
 // Wenn s == nil oder len(s)==0, soll nichts passieren.
 func DoubleAll(s []int) {
-	// TODO: implement
+	
+	if len(s) == 0 {
+		return 
+	}
+
+	for i := range s {
+
+		s[i] *= 2 
+	}
+	
 }
