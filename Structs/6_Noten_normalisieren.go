@@ -11,5 +11,18 @@ type Student struct {
 // - Noten über 100 werden auf 100 gesetzt
 // - Noten unter 0 werden auf 0 gesetzt
 func NormalizeGrades(students []Student) {
-	//TODO
+
+	for i := range students {
+
+		p := &students[i].Grade
+		if *p > 100 {
+			*p = 100
+		}
+
+		if *p < 0 {
+			*p = 0
+		}
+
+
+	}
 }

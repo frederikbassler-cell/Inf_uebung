@@ -6,6 +6,7 @@ func ExampleAppendNode() {
 	AppendNode(&head, "Go")
 	AppendNode(&head, "ist")
 	AppendNode(&head, "toll")
+	AppendNode(&head, "Lüge")
 
 	PrintList(head)
 
@@ -13,4 +14,5 @@ func ExampleAppendNode() {
 	// Go
 	// ist
 	// toll
+	// Lüge
 }
